@@ -1,0 +1,181 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+    grid-template-areas:
+        "header"
+        "app"
+        "footer";
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background: #000000;
+    color: #FEFEFE;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    grid-area: app;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    color: #FFFFFF;
+    grid-area: footer;
+}
+
+/*---------- menu-navegacao ----------*/
+
+.menu-navegacao__item {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-navegacao__item:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/*---------- sobre-mim ----------*/
+
+.sobre-mim {
+    height: auto;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0;
+}
+
+
+.sobre-mim__titulo {
+    text-align: center;
+}
+
+.sobre-mim__imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sobre-mim__descricao {
+    text-align: justify;
+    padding: 0 10%;
+}
+
+
+/*---------- projetos ----------*/
+
+.projetos {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10% 0;
+}
+
+
+.projetos__titulo {
+    text-align: center;
+}
+
+.projetos__lista {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projetos__item {
+    width: 70%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #989898;
+    color: white;
+}
+
+.projetos__item:hover {
+    transition: 0.4s;
+    cursor: not-allowed;
+}
+
+.projetos__item:not(:hover) {
+    transition: 1s;
+}
+
+/*---------- habilidades ----------*/
+
+.habilidades {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 10% 0;
+}
+
+.habilidades__titulo {
+    text-align: center;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.habilidades__item {
+    color: #343434;
+    font-size: 2.5rem;
+}
+
+/*---------- contato ----------*/
+
+.contato {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0;
+}
+
+.contato__titulo {
+    text-align: center;
+}
+
+.contato__lista {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.contato__item {
+    color: #343434;
+    font-size: 2.5rem;
+}
+
+.contato__item:hover {
+    transition: 0.4s;
+    color: #989898;
+}
+
+.contato__item:not(:hover) {
+    transition: 1s;
+}

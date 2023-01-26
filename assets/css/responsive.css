@@ -1,0 +1,34 @@
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .projetos__item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  .sobre-mim__imagem {
+    height: 250px;
+    width: 250px;
+  }
+
+  .habilidades__item {
+    font-size: 5rem;
+  }
+
+  .contato__item {
+    font-size: 5rem;
+  }
+
+  .projetos__item {
+    width: 30%;
+  }
+
+}
