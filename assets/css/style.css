@@ -34,6 +34,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-fonte-texto-body);
     font-size: var(--tamanho-fonte-body);
+    transition: 1s;
 }
 
 .header {
@@ -233,7 +234,6 @@ body {
     --cor-fonte-botao: #343434;
 
     --cor-fonte-icone: #FEFEFE;
-
 }
 
 #btnMudarTema {
