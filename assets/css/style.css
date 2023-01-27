@@ -13,6 +13,14 @@
     --cor-fonte-icone: #343434;
     --cor-fonte-icone-hover: #898989;
 
+    --tamanho-fonte-header: 1rem;
+
+    --tamanho-fonte-body: 1.2rem;
+
+    --tamanho-fonte-icone-regular: 2.5rem;
+    --tamanho-fonte-icone-grande: 3.5rem;
+
+
 }
 
 body {
@@ -25,15 +33,18 @@ body {
         "footer";
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-fonte-texto-body);
+    font-size: var(--tamanho-fonte-body);
 }
 
 .header {
+    padding: 0 5%;
     background-color: var(--cor-fundo-header-footer);
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
     color: var(--cor-fonte-header-footer);
+    font-size: var(--tamanho-fonte-header);
 }
 
 .app {
@@ -54,9 +65,16 @@ body {
 
 /*---------- menu-navegacao ----------*/
 
+.menu-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 .menu-navegacao__item {
     color: var(--cor-fonte-header-footer);
     text-decoration: none;
+    margin: 0 5px;
 }
 
 .menu-navegacao__item:visited {
@@ -160,7 +178,7 @@ body {
 
 .habilidades__item {
     color: var(--cor-fonte-icone);
-    font-size: 2.5rem;
+    font-size: var(--tamanho-fonte-icone-regular);
 }
 
 /*---------- contato ----------*/
@@ -187,7 +205,7 @@ body {
 
 .contato__item {
     color: var(--cor-fonte-icone);
-    font-size: 2.5rem;
+    font-size: var(--tamanho-fonte-icone-regular);
 }
 
 .contato__item:visited {
@@ -219,10 +237,7 @@ body {
 }
 
 #btnMudarTema {
-    position: absolute;
-    top: 10%;
-    left: 95%;
-    font-size: 2rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -234,4 +249,3 @@ body {
 #btnMudarTema:not(hover) {
     transition: 1s;
 }
-
