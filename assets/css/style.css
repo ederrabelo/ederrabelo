@@ -1,6 +1,7 @@
 :root {
     --cor-fundo-header-footer: #202020;
     --cor-fonte-header-footer: #FEFEFE;
+    --cor-fonte-header-footer-hover: #898989;
 
     --cor-fundo-body-primaria: #F4F4F4;
     --cor-fundo-body-secundaria: #FFFFFF;
@@ -78,6 +79,10 @@ body {
     margin: 0 5px;
 }
 
+.menu-navegacao__item:hover {
+    color: var(--cor-fonte-header-footer-hover);
+}
+
 .menu-navegacao__item:visited {
     text-decoration: none;
 }
@@ -147,12 +152,7 @@ body {
 }
 
 .projetos__item:hover {
-    transition: 0.4s;
     cursor: not-allowed;
-}
-
-.projetos__item:not(:hover) {
-    transition: 1s;
 }
 
 /*---------- habilidades ----------*/
@@ -214,14 +214,8 @@ body {
 }
 
 .contato__item:hover {
-    transition: 0.4s;
     color: var(--cor-fonte-icone-hover);
 }
-
-.contato__item:not(:hover) {
-    transition: 1s;
-}
-
 
 .dark-theme {
 
@@ -243,9 +237,4 @@ body {
 
 #btnMudarTema:hover {
     color: var(--cor-fonte-icone-hover);
-    transition: 0.4s;
-}
-
-#btnMudarTema:not(hover) {
-    transition: 1s;
 }
