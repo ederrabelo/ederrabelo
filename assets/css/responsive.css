@@ -1,27 +1,27 @@
 @import url(style.css);
 
 @media screen and (min-width: 768px) {
-  .projetos__item {
+  .projects__item {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .sobre-mim__imagem {
+  .about-me__img {
     height: 250px;
     width: 250px;
   }
 
-  .habilidades__item {
-    font-size: var(--tamanho-fonte-icone-grande);
-  }
-
-  .contato__item {
-    font-size: var(--tamanho-fonte-icone-grande);
-  }
-
-  .projetos__item {
+  .projects__item {
     width: 30%;
+  }
+
+  .skills__item {
+    font-size: var(--siz-font-icon-large);
+  }
+
+  .contact__item {
+    font-size: var(--size-font-icon-large);
   }
 
 }

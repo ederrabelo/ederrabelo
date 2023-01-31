@@ -1,25 +1,25 @@
 :root {
-  --cor-fundo-header-footer: #202020;
-  --cor-fonte-header-footer: #fefefe;
-  --cor-fonte-header-footer-hover: #898989;
+  --color-bg-header-footer: #202020;
+  --color-font-header-footer: #fefefe;
+  --color-font-header-footer-hover: #898989;
 
-  --cor-fundo-body-primaria: #f4f4f4;
-  --cor-fundo-body-secundaria: #ffffff;
+  --color-bg-body-primary: #f4f4f4;
+  --color-bg-body-secundary: #ffffff;
 
-  --cor-fonte-texto-body: #343434;
+  --color-font-text-body: #343434;
 
-  --cor-fundo-botao: #343434;
-  --cor-fonte-botao: #fefefe;
+  --color-bg-btn: #343434;
+  --color-font-btn: #fefefe;
 
-  --cor-fonte-icone: #343434;
-  --cor-fonte-icone-hover: #898989;
+  --color-font-icon: #343434;
+  --color-font-icon-hover: #898989;
 
-  --tamanho-fonte-header-footer: 1rem;
+  --size-font-header-footer: 1rem;
 
-  --tamanho-fonte-body: 1.2rem;
+  --size-font-body: 1.2rem;
 
-  --tamanho-fonte-icone-regular: 2.5rem;
-  --tamanho-fonte-icone-grande: 3.5rem;
+  --size-font-icon-regular: 2.5rem;
+  --size-font-icon-large: 3.5rem;
 }
 
 body {
@@ -31,20 +31,20 @@ body {
     "app"
     "footer";
   font-family: "Montserrat", sans-serif;
-  color: var(--cor-fonte-texto-body);
-  font-size: var(--tamanho-fonte-body);
+  color: var(--color-font-text-body);
+  font-size: var(--size-font-body);
   transition: 1s;
 }
 
 .header {
   padding: 0 5%;
-  background-color: var(--cor-fundo-header-footer);
+  background-color: var(--color-bg-header-footer);
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--cor-fonte-header-footer);
-  font-size: var(--tamanho-fonte-header-footer);
+  color: var(--color-font-header-footer);
+  font-size: var(--size-font-header-footer);
 }
 
 .app {
@@ -58,77 +58,77 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--cor-fundo-header-footer);
-  color: var(--cor-fonte-header-footer);
+  background-color: var(--color-bg-header-footer);
+  color: var(--color-font-header-footer);
   grid-area: footer;
-  font-size: var(--tamanho-fonte-header-footer);
+  font-size: var(--size-font-header-footer);
 }
 
 /*---------- menu-navegacao ----------*/
 
-.menu-navegacao {
+.menu-navigation {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu-navegacao__item {
-  color: var(--cor-fonte-header-footer);
+.menu-navigation__item {
+  color: var(--color-font-header-footer);
   text-decoration: none;
   margin: 0 5px;
 }
 
-.menu-navegacao__item:hover {
-  color: var(--cor-fonte-header-footer-hover);
+.menu-navigation__item:hover {
+  color: var(--color-font-header-footer-hover);
 }
 
-.menu-navegacao__item:visited {
+.menu-navigation__item:visited {
   text-decoration: none;
 }
 
-/*---------- sobre-mim ----------*/
+/*---------- About me ----------*/
 
-.sobre-mim {
+.about-me {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10% 0;
-  background-color: var(--cor-fundo-body-primaria);
+  background-color: var(--color-bg-body-primary);
 }
 
-.sobre-mim__titulo {
+.about-me__title {
   text-align: center;
 }
 
-.sobre-mim__imagem {
+.about-me__img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.sobre-mim__descricao {
+.about-me__description {
   text-align: justify;
   padding: 0 10%;
 }
 
-/*---------- projetos ----------*/
+/*---------- Projects ----------*/
 
-.projetos {
+.projects {
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 10% 0;
-  background-color: var(--cor-fundo-body-secundaria);
+  background-color: var(--color-bg-body-secundary);
 }
 
-.projetos__titulo {
+.projects__title {
   text-align: center;
 }
 
-.projetos__lista {
+.projects__list {
   height: 30vh;
   display: flex;
   flex-direction: column;
@@ -136,36 +136,36 @@ body {
   justify-content: space-around;
 }
 
-.projetos__item {
+.projects__item {
   width: 70%;
   height: 60px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cor-fundo-botao);
-  color: var(--cor-fonte-botao);
+  background-color: var(--color-bg-btn);
+  color: var(--color-font-btn);
 }
 
-.projetos__item:hover {
+.projects__item:hover {
   cursor: not-allowed;
 }
 
-/*---------- habilidades ----------*/
+/*---------- Skills ----------*/
 
-.habilidades {
+.skills {
   height: auto;
   display: flex;
   flex-direction: column;
   padding: 10% 0;
-  background-color: var(--cor-fundo-body-primaria);
+  background-color: var(--color-bg-body-primary);
 }
 
-.habilidades__titulo {
+.skills__title {
   text-align: center;
 }
 
-.habilidades__lista {
+.skills__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -173,26 +173,26 @@ body {
   width: 100%;
 }
 
-.habilidades__item {
-  color: var(--cor-fonte-icone);
-  font-size: var(--tamanho-fonte-icone-regular);
+.skills__item {
+  color: var(--color-font-icon);
+  font-size: var(--size-font-icon-regular);
 }
 
-/*---------- contato ----------*/
+/*---------- Contact ----------*/
 
-.contato {
+.contact {
   height: auto;
   display: flex;
-  background-color: var(--cor-fundo-body-secundaria);
+  background-color: var(--color-bg-body-secundary);
   flex-direction: column;
   padding: 10% 0;
 }
 
-.contato__titulo {
+.contact__title {
   text-align: center;
 }
 
-.contato__lista {
+.contact__list {
   height: 30vh;
   display: flex;
   align-items: center;
@@ -200,36 +200,36 @@ body {
   width: 100%;
 }
 
-.contato__item {
-  color: var(--cor-fonte-icone);
-  font-size: var(--tamanho-fonte-icone-regular);
+.contact__item {
+  color: var(--color-font-icon);
+  font-size: var(--size-font-icon-regular);
 }
 
-.contato__item:visited {
-  color: var(--cor-fonte-icone);
+.contact__item:visited {
+  color: var(--color-font-icon);
 }
 
-.contato__item:hover {
-  color: var(--cor-fonte-icone-hover);
+.contact__item:hover {
+  color: var(--color-font-icon-hover);
 }
 
 .dark-theme {
-  --cor-fundo-body-primaria: #505050;
-  --cor-fundo-body-secundaria: #404040;
+  --color-bg-body-primary: #505050;
+  --color-bg-body-secundary: #404040;
 
-  --cor-fonte-texto-body: #fefefe;
+  --color-font-text-body: #fefefe;
 
-  --cor-fundo-botao: #fefefe;
-  --cor-fonte-botao: #343434;
+  --color-bg-btn: #fefefe;
+  --color-font-btn: #343434;
 
-  --cor-fonte-icone: #fefefe;
+  --color-font-icon: #fefefe;
 }
 
-#btnMudarTema {
+#btnChangeTheme {
   font-size: 1.4rem;
   cursor: pointer;
 }
 
-#btnMudarTema:hover {
-  color: var(--cor-fonte-icone-hover);
+#btnChangeTheme:hover {
+  color: var(--color-font-icon-hover);
 }
