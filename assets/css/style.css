@@ -30,7 +30,7 @@ body {
     "header"
     "app"
     "footer";
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   color: var(--color-font-text-body);
   font-size: var(--size-font-body);
   transition: 1s;
@@ -111,6 +111,7 @@ body {
 .about-me__description {
   text-align: justify;
   padding: 0 10%;
+  font-weight: lighter;
 }
 
 /*---------- Projects ----------*/
