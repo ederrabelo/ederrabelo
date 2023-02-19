@@ -1,4 +1,4 @@
-btnChangeTheme = document.querySelector("#btnChangeTheme");
+const btnChangeTheme = document.querySelector("#btnChangeTheme");
 
 btnChangeTheme.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
